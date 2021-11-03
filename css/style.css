@@ -195,10 +195,22 @@ nav a {
     top: 95px;
     left: -200px;
     width: 200px;
-    height: 400px;
+    height: 462px;
     background-color: snow;
     border: 1px silver solid;
     transition: 0.5s ease-in;
+    border-radius: 5px;
+}
+
+#menu-slide nav ul {
+    list-style: none;
+}
+
+#menu-slide.slide-menu-show {
+    left: 10px;
+    margin-top: 123px;
+    background-color: rgba(90, 90, 90, 0.349);
+    padding: 7px;
 }
 
 /* Ajustes de resposividade */
