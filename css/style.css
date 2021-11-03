@@ -6,6 +6,10 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+body {
+    background-color: rgba(223, 223, 223, 0.432);
+}
+
 header h1 {
     padding: 12px;
     color: white;
@@ -15,12 +19,55 @@ header h1 {
 header {
     background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0.459));
     height: 68px;
-    filter: brightness(0.7);
 }
+
+nav a {
+    font-size: 1.5em;
+    margin-top: 24px;
+}
+
+/* classes css */
 
 .fundo-negro {
     background: url(../img/fundo-pq.jpg);
+    border-radius: 5px;
+    box-shadow: 6px 6px 11px rgba(0, 0, 0, 0.336)
 }
+
+.bi-controller::before {
+    content: "\f2d4";
+    font-size: 52px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.justify-content-center {
+    background-color: rgba(126, 126, 126, 0.336);
+    padding: 17px;
+    border-radius: 10px;
+    box-shadow: 9px 8px 6px rgba(0, 0, 0, 0.123);
+    padding: 8px;
+}
+
+.card {
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.288);
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.contato {
+    margin-top: 40px;
+    font-size: 2em;
+    color: white;
+    padding: 27px;
+    text-align: start;
+}
+
+/* ids css */
 
 #logotipo {
     width: 91%;
@@ -31,36 +78,10 @@ header {
     text-align: center;
 }
 
-.bi-controller::before {
-    content: "\f2d4";
-    font-size: 52px;
-}
-
-nav a {
-    font-size: 1.5em;
-    margin-top: 24px;
-}
-
-.nav-link {
-    color: black;
-}
-
-.nav-link:hover {
-    color: red;
-}
-
 #menu-hamburger {
     display: block;
     float: right;
     font-size: 2rem;
-}
-
-.justify-content-center {
-    background-color: rgba(126, 126, 126, 0.336);
-    padding: 17px;
-    border-radius: 10px;
-    box-shadow: 9px 8px 6px rgba(0, 0, 0, 0.123);
-    padding: 8px;
 }
 
 #botoes-cabecalho {
@@ -101,7 +122,7 @@ nav a {
     color: rgba(255, 255, 255, 0.75);
 }
 
-  #banner #information1 {
+#banner #information1 {
     margin: 2vw;
     margin-right: 30px;
     text-align: center;
@@ -126,6 +147,61 @@ nav a {
     margin-top: 20px;
     margin-right: -171px;
 }
+
+#cards {
+    margin-top: -101px;
+}
+
+#rodape {
+    background: url(../img/fundo-gd.jpg);
+    height: 510px;
+    top: 80px;
+    background-size: 100vw 100%;
+    margin-top: 70px;
+    filter: brightness(0.7);
+}
+
+#logotipo-rodape {
+    width: 91%;
+    height: 108px;
+    font-size: 4em;
+    color: white;
+    padding: 33px;
+    text-align: start;
+}
+
+#contato-endereco {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 435px;
+}
+
+#icons-rodape {
+    color: white;
+    font-size: 4em;
+    text-align: right;
+    margin: 27px -51px;
+    padding: 3px;
+}
+
+#icons-rodape a {
+    color: white;
+}
+
+#menu-slide {
+    z-index: 10;
+    position: absolute;
+    top: 95px;
+    left: -200px;
+    width: 200px;
+    height: 400px;
+    background-color: snow;
+    border: 1px silver solid;
+    transition: 0.5s ease-in;
+}
+
+/* Ajustes de resposividade */
 
 @media screen and (max-width: 1715px) {
     #botoes-cabecalho {
@@ -170,65 +246,4 @@ nav a {
     #rodape {
         font-size: 0.4em;
     }
-}
-
-#cards {
-    margin-top: -101px;
-}
-
-#rodape {
-    background: url(../img/fundo-gd.jpg);
-    height: 510px;
-    top: 80px;
-    background-size: 100vw 100%;
-    margin-top: 70px;
-    filter: brightness(0.7);
-}
-
-#logotipo-rodape {
-    width: 91%;
-    height: 108px;
-    font-size: 4em;
-    color: white;
-    padding: 33px;
-    text-align: start;
-}
-
-.contato {
-    margin-top: 40px;
-    font-size: 2em;
-    color: white;
-    padding: 27px;
-    text-align: start;
-}
-
-#contato-endereco {
-    color: white;
-    font-size: 2em;
-    text-align: center;
-    margin-top: 435px;
-}
-
-#icons-rodape {
-    color: white;
-    font-size: 4em;
-    text-align: right;
-    margin: 27px -51px;
-    padding: 3px;
-}
-
-#icons-rodape a {
-    color: white;
-}
-
-#menu-slide {
-    z-index: 10;
-    position: absolute;
-    top: 95px;
-    left: -200px;
-    width: 200px;
-    height: 400px;
-    background-color: snow;
-    border: 1px silver solid;
-    transition: 0.5s ease-in;
 }
