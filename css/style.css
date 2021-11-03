@@ -135,6 +135,12 @@ nav a {
     }
 }
 
+@media screen and (max-width: 1680px) {
+    #rodape {
+        font-size: 0.7em;
+    }
+}
+
 @media screen and (max-width: 1350px) {
     .justify-content-center {
         display: none;
@@ -144,22 +150,25 @@ nav a {
     }
     #menu-mobile {
         display: block;
+        margin-right: 15px;
     }
     #logotipo {
         font-size: 2.4em;
     }
 }
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1200px) {
     #logotipo {
         font-size: 2.1em;
     }
-
-}
-
-@media screen and (max-width: 1190px) {
     #logotipo span {
         display: none;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #rodape {
+        font-size: 0.4em;
     }
 }
 
