@@ -229,6 +229,12 @@ nav a {
     }
 }
 
+@media screen and (min-width: 1355px) {
+    #menu-slide.slide-menu-show {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1350px) {
     .justify-content-center {
         display: none;
@@ -258,4 +264,5 @@ nav a {
     #rodape {
         font-size: 0.4em;
     }
+
 }
